@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+GENERAL 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+HEADER
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1F2937;
+}
+
+header div{
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+ul{
+    display: flex;
+    gap: 12px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    font-size: 18px;
+    color: #E5E7EB;
+    text-decoration: none;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+MAIN
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+.hero{
+    display: flex;
+    justify-content: center;
+    background-color: #1F2937;
+    padding: 40px;
+}
+
+#image{
+    padding: 32px;
+    background-color: gainsboro;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.hero div{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+/* ONE */
+.one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.one > div:nth-child(2){
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid blue;
+    gap: 24px;
+}
+
+.quadrati{
+    width: 100px;
+    height: auto;
+}
+
+.quadrati div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+/* TWO */
+.two{
+    background-color: #E5E7EB;  
+    color: #1F2937;
+}
+.two div{
+    font-style: italic;
+}
+
+/* THREE */
+
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+FOOTER
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+footer{
+    background-color: #1F2937;
+}
