@@ -2,17 +2,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 GENERAL 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.button{
+    background-color: #3882F6;
+    padding: 4px 12px;
+    align-items: center;
+    border-radius: 5px;
+    color: #E5E7EB;
+}
+
+section{
+    width: 100vw;
+    display: flex;
+}
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 HEADER
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 header{
+    padding: 12px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -43,16 +62,31 @@ a{
 MAIN
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .hero{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: #1F2937;
-    padding: 40px;
+    padding: 32px 0;
+}
+
+.hero > div:nth-child(1){
+    width: 35%;
 }
 
 #image{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 32px;
-    background-color: gainsboro;
+    background-color: gray;
+    white-space: pre-line;
 }
 
 h1{
@@ -62,55 +96,100 @@ h1{
 }
 
 .hero div{
+    display: flex;
+    flex-direction: column;
     font-size: 18px;
     color: #E5E7EB;
 }
+.hero div .button{
+    width: max-content;
+}
 /* ONE */
 .one{
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.one > div:nth-child(1){
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
 .one > div:nth-child(2){
     display: flex;
     justify-content: space-around;
-    border: 1px solid blue;
     gap: 24px;
 }
 
 .quadrati{
     width: 100px;
-    height: auto;
+    height: auto;    
+    text-align: center;
 }
 
 .quadrati div{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: red;
+    border: 2px solid #3882F6;
+    border-radius: 20px;
     width: 100px;
     height: 100px;
+
 }
 
 /* TWO */
-.two{
+
+.two{ 
     background-color: #E5E7EB;  
     color: #1F2937;
+    justify-content: center;
 }
-.two div{
+
+.two > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.two > div > div{
     font-style: italic;
+    white-space: pre-line;
+}
+
+.two span{
+    font-weight: 700;
+    align-self: flex-end;
 }
 
 /* THREE */
 
+.three{
+    justify-content: space-evenly;
+    border-radius: 5px;
+    background-color: #3882F6;
+    color: #E5E7EB;
+    width: 75vw;
+    padding: 20px;
+    margin: 0 auto 30px;
+    border: 1px solid blue;
+}
 
-
+.three .button{
+    border: 1px solid #E5E7EB;
+}
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 FOOTER
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 
 footer{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: #E5E7EB;
     background-color: #1F2937;
 }
